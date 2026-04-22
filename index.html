@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">SleeePal 睡眠宝 — 睡眠，才是最好的奢侈品</title>
+  <meta id="page-description" name="description" content="睡眠才是最好的奢侈品。SleeePal 睡眠宝，用主动近场降噪技术，无需安眠药，在枕边建立宁静区，守护你和家人的香甜睡眠。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./site.js" defer></script>
+</head>
+<body>
+
+  <!-- ══ NAV ══ -->
+  <nav class="nav" id="top">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top">
+        <img class="nav-logo" src="./assets/logo-dark.svg" alt="SleeePal" />
+      </a>
+      <nav class="nav-links">
+        <a href="#philosophy" data-i18n="nav.philosophy">理念</a>
+        <a href="#science" data-i18n="nav.science">原理</a>
+        <a href="#features" data-i18n="nav.features">功能</a>
+        <a href="#visual" data-i18n="nav.visual">可视化</a>
+        <a href="#download" class="nav-cta" data-i18n="nav.cta">立即体验</a>
+      </nav>
+      <button class="lang-toggle" type="button" data-lang-toggle>EN</button>
+    </div>
+  </nav>
+
+  <!-- ══ HERO: LUXURY STATEMENT ══ -->
+  <section class="hero-luxury" id="hero">
+    <div class="luxury-bg">
+      <div class="lux-grain"></div>
+      <div class="lux-circle lc-1"></div>
+      <div class="lux-circle lc-2"></div>
+      <div class="lux-circle lc-3"></div>
+    </div>
+
+    <div class="hero-lux-inner">
+      <div class="hero-pretitle" data-i18n="hero.pretitle">QuietZone™ 近场宁静区守护技术 · sleeepal.com</div>
+
+      <h1 class="hero-lux-title">
+        <span class="title-line-sm" data-i18n="hero.kicker">您从未拥有过</span>
+        <span class="title-line-lg" data-i18n-html="hero.headline"><em>这样的宁静</em></span>
+      </h1>
+
+      <div class="hero-lux-divider">
+        <span class="divider-line"></span>
+        <svg class="divider-gem" viewBox="0 0 16 16" fill="none">
+          <path d="M8 1 L14 6 L8 15 L2 6 Z" stroke="currentColor" stroke-width="0.8" fill="none"/>
+          <path d="M2 6 L8 9 L14 6" stroke="currentColor" stroke-width="0.8"/>
+        </svg>
+        <span class="divider-line"></span>
+      </div>
+
+      <p class="hero-lux-sub" data-i18n-html="hero.sub">
+        睡眠，才是最好的奢侈品。<br/>
+        良好的睡眠，胜过任何名贵护肤品，胜过任何昂贵保健品，<br/>
+        甚至胜过安眠药——而您终于拥有了守护它的方式。
+      </p>
+
+      <p class="hero-lux-brand" data-i18n-html="hero.brand">
+        <strong>SleeePal 睡眠宝</strong>，守护你和家人的睡眠。
+      </p>
+
+      <div class="hero-lux-actions">
+        <a class="btn-lux-primary" href="#download" data-i18n="hero.primary">免费下载 · Mac 版</a>
+        <a class="btn-lux-ghost" href="#science" data-i18n="hero.secondary">了解近场宁静技术</a>
+      </div>
+
+      <!-- Apple-style quantified proof -->
+      <div class="hero-lux-proof">
+        <div class="lux-proof-item">
+          <div class="lux-pf-num" style="font-size:1.4rem">44,100</div>
+          <div class="lux-pf-label">次/秒实时采样</div>
+        </div>
+        <div class="lux-pf-divider"></div>
+        <div class="lux-proof-item">
+          <div class="lux-pf-num">&lt;2ms</div>
+          <div class="lux-pf-label">反相校准精度</div>
+        </div>
+        <div class="lux-pf-divider"></div>
+        <div class="lux-proof-item">
+          <div class="lux-pf-num">3</div>
+          <div class="lux-pf-label">轨实时波形验证</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right side: luxury app visual -->
+    <div class="hero-lux-visual">
+      <div class="lux-app-frame">
+        <div class="lux-frame-chrome">
+          <div class="chrome-dots">
+            <span class="cdot r"></span>
+            <span class="cdot a"></span>
+            <span class="cdot g"></span>
+          </div>
+          <span class="chrome-title">SleeePal 睡眠宝 — 宁静守护中</span>
+        </div>
+        <div class="lux-app-body">
+
+          <!-- Central status display -->
+          <div class="lux-status">
+            <div class="lux-status-ring">
+              <svg viewBox="0 0 220 220">
+                <defs>
+                  <linearGradient id="luxRing" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#c9a96e"/>
+                    <stop offset="40%" stop-color="#e8d5a3"/>
+                    <stop offset="100%" stop-color="#c9a96e"/>
+                  </linearGradient>
+                  <filter id="glow">
+                    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                    <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                  </filter>
+                </defs>
+                <!-- Outer decorative ring -->
+                <circle cx="110" cy="110" r="104" stroke="#f0e8d4" stroke-width="0.5" fill="none"/>
+                <!-- Progress arc -->
+                <circle cx="110" cy="110" r="96" stroke="#f0e8d4" stroke-width="1" fill="none" opacity="0.4"/>
+                <circle cx="110" cy="110" r="96" stroke="url(#luxRing)" stroke-width="2.5"
+                  fill="none" stroke-dasharray="380 220" stroke-dashoffset="-30"
+                  stroke-linecap="round" filter="url(#glow)"
+                  class="lux-ring-anim"/>
+                <!-- Inner rings -->
+                <circle cx="110" cy="110" r="80" stroke="#f0e8d4" stroke-width="0.5" fill="none" opacity="0.5"/>
+                <circle cx="110" cy="110" r="64" stroke="#e8d5a3" stroke-width="0.3" fill="none" opacity="0.3"/>
+              </svg>
+              <div class="lux-status-center">
+                <div class="lux-status-moon">🌙</div>
+                <div class="lux-status-state">宁静守护中</div>
+                <div class="lux-status-db">38<small>dB</small></div>
+                <div class="lux-status-time">2h 34m</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 waveform tracks -->
+          <div class="lux-waves">
+            <div class="lux-wave-row">
+              <div class="lw-meta">
+                <span class="lw-dot" style="background:#e07b9f"></span>
+                <span class="lw-name">环境噪音</span>
+                <span class="lw-val">56 dB · 62 Hz</span>
+              </div>
+              <svg class="lw-svg" viewBox="0 0 300 36" preserveAspectRatio="none">
+                <path d="M0,18 C15,6 25,28 40,12 C55,0 65,28 80,14 C95,2 108,30 122,12 C136,0 148,28 162,14 C176,2 188,30 202,12 C216,0 228,28 242,14 C256,2 268,30 282,14 C296,0 300,18 300,18"
+                  fill="none" stroke="#e07b9f" stroke-width="1.5" stroke-linecap="round"
+                  class="wave-noise"/>
+              </svg>
+            </div>
+            <div class="lux-wave-row">
+              <div class="lw-meta">
+                <span class="lw-dot" style="background:#9e8fca"></span>
+                <span class="lw-name">反相输出</span>
+                <span class="lw-val">延迟 12ms · −2 dB</span>
+              </div>
+              <svg class="lw-svg" viewBox="0 0 300 36" preserveAspectRatio="none">
+                <path d="M0,18 C15,30 25,8 40,24 C55,36 65,8 80,22 C95,34 108,6 122,24 C136,36 148,8 162,22 C176,34 188,6 202,24 C216,36 228,8 242,22 C256,34 268,6 282,22 C296,36 300,18 300,18"
+                  fill="none" stroke="#9e8fca" stroke-width="1.5" stroke-linecap="round"
+                  class="wave-anti"/>
+              </svg>
+            </div>
+            <div class="lux-wave-row">
+              <div class="lw-meta">
+                <span class="lw-dot" style="background:#c9a96e"></span>
+                <span class="lw-name">理论抵消效果</span>
+                <span class="lw-val result-gold">主峰 −18 dB · 改善 68%</span>
+              </div>
+              <svg class="lw-svg" viewBox="0 0 300 36" preserveAspectRatio="none">
+                <path d="M0,18 C60,17.5 120,18.5 180,18 C240,17.5 270,18.5 300,18"
+                  fill="none" stroke="#c9a96e" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- stats row -->
+          <div class="lux-stats-row">
+            <div class="lux-stat">
+              <span class="ls-val">62 Hz</span>
+              <span class="ls-key">主频</span>
+            </div>
+            <div class="lux-stat-sep"></div>
+            <div class="lux-stat">
+              <span class="ls-val">−18 dB</span>
+              <span class="ls-key">理论降噪</span>
+            </div>
+            <div class="lux-stat-sep"></div>
+            <div class="lux-stat">
+              <span class="ls-val">98%</span>
+              <span class="ls-key">校准置信度</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PHILOSOPHY BAND ══ -->
+  <div class="philosophy-band" id="philosophy">
+    <div class="pb-inner">
+      <div class="pb-quote">
+        <div class="pb-quote-mark">"</div>
+        <blockquote>良好的睡眠，胜过任何奢侈品——不是吗？</blockquote>
+        <div class="pb-quote-mark mirror">"</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ MARQUEE ══ -->
+  <div class="marquee-band">
+    <div class="marquee-track">
+      <span>THE BEST QUIET YOU'VE NEVER HEARD</span><span class="ms">·</span>
+      <span>睡眠才是最好的奢侈品</span><span class="ms">·</span>
+      <span>无需安眠药</span><span class="ms">·</span>
+      <span>QuietZone™ TECHNOLOGY</span><span class="ms">·</span>
+      <span>守护家人睡眠</span><span class="ms">·</span>
+      <span data-i18n="marquee.1">44,100 SAMPLES PER SECOND</span><span class="ms">·</span>
+      <span data-i18n="marquee.2">近场宁静区  · 您周围的安静</span><span class="ms">·</span>
+      <span data-i18n="marquee.3">THE BEST QUIET YOU'VE NEVER HEARD</span><span class="ms">·</span>
+      <span data-i18n="marquee.4">睡眠才是最好的奢侈品</span><span class="ms">·</span>
+      <span data-i18n="marquee.5">无需安眠药</span><span class="ms">·</span>
+      <span data-i18n="marquee.6">QuietZone™ TECHNOLOGY</span><span class="ms">·</span>
+      <span data-i18n="marquee.7">守护家人睡眠</span><span class="ms">·</span>
+    </div>
+  </div>
+
+  <!-- ══ BRAND STATEMENT: Apple-style single sentence ══ -->
+  <section class="brand-statement-section">
+    <div class="container">
+      <div class="bs-inner">
+        <h2 class="bs-headline">您的世界。<em>只有宁静。</em></h2>
+        <p class="bs-sub">主动降噪耳机把安静放进耳道，SleeePal 把安静放进整个枕边空间。<br/>无需佩戴任何设备——让您的耳朵，和您的睡眠，同时得到解放。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SCIENCE / TECHNOLOGY ══ -->
+  <section class="section science-section" id="science">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="kicker-lux">QuietZone™ 近场宁静区 · 技术原理</div>
+        <h2 class="section-title-lux">
+          主动降噪，<br/>
+          <em>从耳道放大到枕边</em>
+        </h2>
+        <p class="section-desc-lux">
+          Bose 发明了主动降噪耳机，把安静送进了耳道。<br/>
+          SleeePal 把同样的物理原理放大，直接作用于你枕边 30–60 cm 的空间——<strong>无需佩戴任何设备。</strong>
+        </p>
+      </div>
+
+      <!-- How ANC works: 3-step visual comparison (Bose-style authority + Sony-style hardware spec) -->
+      <div class="anc-explainer">
+        <div class="anc-compare">
+          <div class="anc-card anc-card-earphone">
+            <div class="ancc-kicker">传统降噪耳机</div>
+            <div class="ancc-icon">
+              <svg viewBox="0 0 80 80" fill="none">
+                <ellipse cx="40" cy="40" r="28" stroke="#9e8fca" stroke-width="1" stroke-dasharray="3 3" opacity="0.4"/>
+                <circle cx="40" cy="40" r="12" fill="#9e8fca" opacity="0.15" stroke="#9e8fca" stroke-width="1"/>
+                <circle cx="40" cy="40" r="4" fill="#9e8fca" opacity="0.6"/>
+                <text x="40" y="77" text-anchor="middle" fill="#9e8fca" font-size="9" font-family="Inter,sans-serif" opacity="0.7">宁静区 = 耳道</text>
+              </svg>
+            </div>
+            <p>麦克风在耳罩里<br/>宁静区在<strong>耳道内</strong><br/>必须佩戴耳机</p>
+          </div>
+          <div class="anc-arrow-mid">→<br/><span>放大</span><br/>×1000</div>
+          <div class="anc-card anc-card-sleeepal">
+            <div class="ancc-kicker">SleeePal QuietZone™</div>
+            <div class="ancc-icon">
+              <svg viewBox="0 0 80 80" fill="none">
+                <ellipse cx="40" cy="36" rx="36" ry="28" stroke="#c9a96e" stroke-width="1.2" stroke-dasharray="3 3" opacity="0.6" class="zone-pulse"/>
+                <circle cx="40" cy="36" r="10" fill="#c9a96e" opacity="0.08"/>
+                <!-- head -->
+                <circle cx="40" cy="30" r="8" fill="#f0e8d4" stroke="#c9a96e" stroke-width="0.8"/>
+                <!-- phone -->
+                <rect x="58" y="42" width="12" height="22" rx="3" fill="#2a1f3d" stroke="#c9a96e" stroke-width="0.8"/>
+                <text x="40" y="76" text-anchor="middle" fill="#c9a96e" font-size="9" font-family="Inter,sans-serif" opacity="0.8">宁静区 = 枕边空间</text>
+              </svg>
+            </div>
+            <p>麦克风在手机里<br/>宁静区在<strong>枕边 30–60 cm</strong><br/>无需佩戴任何设备</p>
+          </div>
+        </div>
+        <div class="anc-spec-bar">
+          <div class="asb-item">
+            <span class="asb-num">44,100</span>
+            <span class="asb-label">Hz 采样率，实时处理每一帧声音</span>
+          </div>
+          <div class="asb-sep"></div>
+          <div class="asb-item">
+            <span class="asb-num">1,024</span>
+            <span class="asb-label">样本/帧，&lt;23ms 延迟窗口</span>
+          </div>
+          <div class="asb-sep"></div>
+          <div class="asb-item">
+            <span class="asb-num">60–900</span>
+            <span class="asb-label">Hz 鼾声频段精准侦测</span>
+          </div>
+          <div class="asb-sep"></div>
+          <div class="asb-item">
+            <span class="asb-num">3</span>
+            <span class="asb-label">路实时波形，效果可见可验证</span>
+          </div>
+        </div>
+      </div>
+      <div class="principle-visual">
+        <div class="pv-diagram">
+          <svg viewBox="0 0 560 280" class="pv-svg">
+            <defs>
+              <radialGradient id="headGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#c9a96e" stop-opacity="0.15"/>
+                <stop offset="100%" stop-color="#c9a96e" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="waveGrad1" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#e07b9f" stop-opacity="0.8"/>
+                <stop offset="100%" stop-color="#e07b9f" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="waveGrad2" x1="1" y1="0" x2="0" y2="0">
+                <stop offset="0%" stop-color="#9e8fca" stop-opacity="0.8"/>
+                <stop offset="100%" stop-color="#9e8fca" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Bed surface -->
+            <rect x="80" y="200" width="400" height="16" rx="8" fill="#f0e8d4" opacity="0.6"/>
+            <!-- Pillow -->
+            <ellipse cx="280" cy="196" rx="120" ry="20" fill="#faf6f0" stroke="#e8d5a3" stroke-width="0.8"/>
+
+            <!-- Head (simplified circle) -->
+            <circle cx="280" cy="168" r="36" fill="#faf0e8" stroke="#e8d5a3" stroke-width="1"/>
+            <!-- Face hint -->
+            <circle cx="269" cy="162" r="4" fill="#e8c4a4" opacity="0.5"/>
+            <circle cx="291" cy="162" r="4" fill="#e8c4a4" opacity="0.5"/>
+            <path d="M271 176 Q280 182 289 176" stroke="#e8c4a4" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.5"/>
+
+            <!-- Quiet zone bubble -->
+            <ellipse cx="280" cy="158" rx="110" ry="80" fill="url(#headGlow)" stroke="#c9a96e"
+              stroke-width="1" stroke-dasharray="4 4" opacity="0.7" class="zone-pulse"/>
+            <text x="280" y="82" text-anchor="middle" fill="#c9a96e" font-size="11" font-family="'Inter',sans-serif" letter-spacing="1">近场宁静区</text>
+            <text x="280" y="96" text-anchor="middle" fill="#c9a96e" font-size="9" font-family="'Inter',sans-serif" opacity="0.6">30–60 cm</text>
+
+            <!-- Noise waves coming from left (snoring partner) -->
+            <text x="44" y="110" text-anchor="middle" fill="#e07b9f" font-size="9" font-family="'Inter',sans-serif" opacity="0.7">呼噜声</text>
+            <text x="44" y="122" text-anchor="middle" fill="#e07b9f" font-size="9" font-family="'Inter',sans-serif" opacity="0.7">噪音源</text>
+            <path d="M75 140 C90 130 100 150 115 138 C130 126 140 152 155 140 C170 128 180 152 195 140" stroke="#e07b9f" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.8" class="wave-in"/>
+            <path d="M75 160 C90 150 100 170 115 158 C130 146 140 172 155 160 C170 148 180 172 195 160" stroke="#e07b9f" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.5" class="wave-in"/>
+
+            <!-- Phone on right side (sound source) -->
+            <rect x="448" y="148" width="38" height="68" rx="8" fill="#2a1f3d" stroke="#c9a96e" stroke-width="1"/>
+            <rect x="452" y="152" width="30" height="48" rx="4" fill="#1a1230"/>
+            <circle cx="467" cy="206" r="4" fill="#c9a96e" opacity="0.6"/>
+            <text x="467" y="230" text-anchor="middle" fill="#c9a96e" font-size="8" font-family="'Inter',sans-serif">手机</text>
+            <text x="467" y="240" text-anchor="middle" fill="#c9a96e" font-size="8" font-family="'Inter',sans-serif">扬声器</text>
+
+            <!-- Antiphase waves from phone going left -->
+            <path d="M445 140 C430 130 420 150 405 138 C390 126 380 152 365 140 C350 128 340 152 325 140" stroke="#9e8fca" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.8" class="wave-out"/>
+            <path d="M445 160 C430 150 420 170 405 158 C390 146 380 172 365 160 C350 148 340 172 325 160" stroke="#9e8fca" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.5" class="wave-out"/>
+
+            <!-- Cancellation zone indicator -->
+            <text x="280" y="258" text-anchor="middle" fill="#999" font-size="9" font-family="'Inter',sans-serif">反相波 + 噪音波 → 互相抵消 → 宁静</text>
+
+            <!-- Labels -->
+            <text x="200" y="138" fill="#e07b9f" font-size="8" font-family="'Inter',sans-serif" opacity="0.9">噪音波 →</text>
+            <text x="305" y="138" fill="#9e8fca" font-size="8" font-family="'Inter',sans-serif" opacity="0.9">← 反相波</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- 4-step flow — Bose-style step-by-step authority -->
+      <div class="tech-steps">
+        <div class="tech-step">
+          <div class="ts-num">01</div>
+          <div class="ts-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="22" stroke="#e07b9f" stroke-width="0.8"/>
+              <path d="M14 24 Q24 10 34 24" stroke="#e07b9f" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="3" fill="#e07b9f"/>
+            </svg>
+          </div>
+          <h3>麦克风持续侦测</h3>
+          <p>手机麦克风每秒采集 44,100 个声音样本，实时捕捉枕边噪音——鼾声、空调低频、机器振动，每一帧都不放过。</p>
+        </div>
+        <div class="ts-arrow">→</div>
+        <div class="tech-step">
+          <div class="ts-num">02</div>
+          <div class="ts-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="22" stroke="#9e8fca" stroke-width="0.8"/>
+              <rect x="14" y="32" width="4" height="8" rx="2" fill="#9e8fca" transform="translate(0,-8)"/>
+              <rect x="20" y="32" width="4" height="14" rx="2" fill="#9e8fca" transform="translate(0,-14)"/>
+              <rect x="26" y="32" width="4" height="10" rx="2" fill="#9e8fca" transform="translate(0,-10)"/>
+              <rect x="32" y="32" width="4" height="18" rx="2" fill="#c9a96e" transform="translate(0,-18)"/>
+            </svg>
+          </div>
+          <h3>DSP 频谱分析</h3>
+          <p>FFT 算法实时识别噪音的主频、谐波结构和能量分布，每 23 毫秒完成一次完整的频谱分析，锁定需要对冲的频段。</p>
+        </div>
+        <div class="ts-arrow">→</div>
+        <div class="tech-step">
+          <div class="ts-num">03</div>
+          <div class="ts-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="22" stroke="#c9a96e" stroke-width="0.8"/>
+              <path d="M14 24 Q24 38 34 24" stroke="#c9a96e" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="3" fill="#c9a96e"/>
+            </svg>
+          </div>
+          <h3>精准反相输出</h3>
+          <p>生成与噪音完全反相的信号，自动校准麦克风到扬声器的传播延迟（通常 8–20ms），误差控制在 2ms 以内，确保抵消信号精准到达。</p>
+        </div>
+        <div class="ts-arrow">→</div>
+        <div class="tech-step">
+          <div class="ts-num">04</div>
+          <div class="ts-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="22" stroke="#4caf8a" stroke-width="0.8"/>
+              <path d="M16 24 Q24 20 32 24 Q24 28 16 24Z" fill="#4caf8a" opacity="0.3"/>
+              <circle cx="24" cy="24" r="7" stroke="#4caf8a" stroke-width="1.5" fill="none"/>
+              <circle cx="24" cy="24" r="2" fill="#4caf8a"/>
+            </svg>
+          </div>
+          <h3>QuietZone™ 建立</h3>
+          <p>反相波与噪音波在枕边 30–60cm 区域相互叠加抵消，局部声压显著降低，宁静领地建立。三路实时波形同屏验证，效果可见，不靠玄学。</p>
+        </div>
+      </div>
+
+      <!-- Why near-field works -->
+      <div class="why-nearfield">
+        <div class="wnf-text">
+          <div class="kicker-lux">为什么近场有效</div>
+          <h3>不追求全屋静音，<br/><em>只守护你真正休息的那一块空间</em></h3>
+          <p>全屋级主动降噪需要专业声学工程和大量设备，成本极高且实现困难。SleeePal 选择了更聪明的路径：只在你头部周围约 0.05 立方米的近场空间建立宁静区。</p>
+          <p>这与主动降噪耳机在耳道里建立宁静区的原理完全一致，区别在于 SleeePal 把这个区域放大到了枕头大小——你的耳朵得到了解放。</p>
+          <ul class="wnf-list">
+            <li>
+              <span class="wnf-icon">🔇</span>
+              <div><strong>手机单机模式</strong> — 30–60 cm 近场，适合午睡和简单床头使用</div>
+            </li>
+            <li>
+              <span class="wnf-icon">🔊</span>
+              <div><strong>Mac + 有线音箱</strong> — 更强的低频输出，床头场景效果更稳定</div>
+            </li>
+            <li>
+              <span class="wnf-icon">🎙</span>
+              <div><strong>专业方案：笔记本/Mac mini + 有线 mic + 有线音箱</strong> — 可扩展至约 1–2 m³ 宁静区，夜间长时运行最佳</div>
+            </li>
+          </ul>
+          <div class="wnf-note">
+            ⚠ 无线蓝牙音箱 + 无线麦克风不推荐：蓝牙总延迟通常超过 100ms，会导致反相信号严重失准，无法有效抵消。
+          </div>
+        </div>
+        <div class="wnf-visual">
+          <div class="wnf-card wnf-card-phone">
+            <div class="wnfc-icon">📱</div>
+            <div class="wnfc-title">手机单机</div>
+            <div class="wnfc-zone">~30–60 cm</div>
+            <div class="wnfc-badge lite">轻量版</div>
+          </div>
+          <div class="wnf-arrow">→</div>
+          <div class="wnf-card wnf-card-enhanced">
+            <div class="wnfc-icon">💻</div>
+            <div class="wnfc-title">Mac + 有线音箱</div>
+            <div class="wnfc-zone">床头 · 更稳定</div>
+            <div class="wnfc-badge pro">家用增强版</div>
+          </div>
+          <div class="wnf-arrow">→</div>
+          <div class="wnf-card wnf-card-pro">
+            <div class="wnfc-icon">🖥️</div>
+            <div class="wnfc-title">Mac mini + 有线 mic + 音箱</div>
+            <div class="wnfc-zone">1–2 m³ 宁静区</div>
+            <div class="wnfc-badge max">专业版</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ WHO IT'S FOR ══ -->
+  <section class="section who-section" id="who">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="kicker-lux">守护对象</div>
+        <h2 class="section-title-lux">
+          睡眠宝，<br/>
+          <em>守护你和家人的睡眠</em>
+        </h2>
+      </div>
+
+      <div class="who-lux-grid">
+        <article class="who-lux-card wlc-rose">
+          <div class="wlc-number">01</div>
+          <div class="wlc-icon">
+            <svg viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+              <circle cx="22" cy="26" r="7" fill="currentColor" opacity="0.5"/>
+              <circle cx="42" cy="28" r="7" fill="currentColor" opacity="0.4"/>
+              <path d="M15 46 Q22 38 30 46" fill="currentColor" opacity="0.3"/>
+              <path d="M34 45 Q41 38 49 45" fill="currentColor" opacity="0.3"/>
+              <!-- zzz from right figure -->
+              <text x="48" y="22" fill="currentColor" font-size="8" opacity="0.7" font-family="sans-serif">z</text>
+              <text x="52" y="16" fill="currentColor" font-size="10" opacity="0.5" font-family="sans-serif">z</text>
+              <text x="56" y="10" fill="currentColor" font-size="12" opacity="0.3" font-family="sans-serif">z</text>
+            </svg>
+          </div>
+          <h3>已婚女性</h3>
+          <p class="wlc-pain">丈夫打呼噜，每晚都睡不安稳，又不想整晚戴耳塞、戴耳机。</p>
+          <div class="wlc-sep"></div>
+          <p class="wlc-solution">SleeePal 在你枕边建立宁静区，减轻呼噜声干扰，让你不靠忍耐，也能安然入眠。</p>
+          <div class="wlc-tag">枕边宁静 · 减轻呼噜干扰</div>
+        </article>
+
+        <article class="who-lux-card wlc-lavender">
+          <div class="wlc-number">02</div>
+          <div class="wlc-icon">
+            <svg viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+              <circle cx="22" cy="28" r="8" fill="currentColor" opacity="0.5"/>
+              <circle cx="42" cy="30" r="5" fill="currentColor" opacity="0.4"/>
+              <!-- Shield around baby -->
+              <path d="M38 24 Q48 27 46 36 Q44 42 42 44 Q40 38 38 33 Q36 27 38 24Z" stroke="currentColor" stroke-width="1" fill="none" opacity="0.6"/>
+              <path d="M15 46 Q22 38 30 46" fill="currentColor" opacity="0.3"/>
+            </svg>
+          </div>
+          <h3>育儿妈妈</h3>
+          <p class="wlc-pain">宝宝睡眠浅，一点动静就哭醒，妈妈也跟着失眠，白天精疲力竭。</p>
+          <div class="wlc-sep"></div>
+          <p class="wlc-solution">在婴儿床旁守护宁静区，减少环境噪音打扰，宝宝多睡几分钟，你也能跟着喘口气。</p>
+          <div class="wlc-tag">守护宝宝 · 宁静环境监测</div>
+        </article>
+
+        <article class="who-lux-card wlc-mint">
+          <div class="wlc-number">03</div>
+          <div class="wlc-icon">
+            <svg viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="30" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+              <rect x="16" y="32" width="32" height="5" rx="2.5" fill="currentColor" opacity="0.3"/>
+              <ellipse cx="32" cy="31" rx="12" ry="5" fill="currentColor" opacity="0.2"/>
+              <circle cx="32" cy="22" r="7" fill="currentColor" opacity="0.5"/>
+              <circle cx="50" cy="16" r="6" stroke="currentColor" stroke-width="1" fill="none" opacity="0.6"/>
+              <path d="M50 13 L50 16 L52 18" stroke="currentColor" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3>上班族 &amp; 学生</h3>
+          <p class="wlc-pain">午睡 20 分钟是下午效率的关键，但办公室、宿舍环境嘈杂，戴耳机又不自然。</p>
+          <div class="wlc-sep"></div>
+          <p class="wlc-solution">一键开启，不需要戴任何设备，让午休角落快速安静下来，让大脑真正放松。</p>
+          <div class="wlc-tag">午睡守护 · 快速启动</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SLOGANS INTERLUDE ══ -->
+  <section class="slogan-section">
+    <div class="slogan-grid">
+      <div class="slogan-block sb-dark">
+        <p class="slogan-label">SleeePal 睡眠宝的承诺</p>
+        <h2>高效入眠，<br/><em>无需安眠药</em></h2>
+        <p class="slogan-body">安眠药有依赖风险，戒断反应，以及长期使用后的睡眠质量下降。SleeePal 从噪音根源入手，用物理降噪+心理声学辅助，让您的身体自然进入深度休息状态——这才是真正的奢侈品。</p>
+      </div>
+      <div class="slogan-block sb-light">
+        <div class="slogan-stat-row">
+          <div class="slogan-stat">
+            <div class="ss-num">0</div>
+            <div class="ss-label">耳机耳塞<br/>佩戴需求</div>
+          </div>
+          <div class="slogan-stat">
+            <div class="ss-num">3</div>
+            <div class="ss-label">路实时波形<br/>效果可见</div>
+          </div>
+          <div class="slogan-stat">
+            <div class="ss-num">∞</div>
+            <div class="ss-label">宁静夜晚<br/>无处不在</div>
+          </div>
+        </div>
+        <div class="slogan-tagline">
+          <span>睡眠宝</span>
+          <span class="st-sep">·</span>
+          <em>保护你和家人的睡眠</em>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FEATURES ══ -->
+  <section class="section features-section" id="features">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="kicker-lux">五大模块</div>
+        <h2 class="section-title-lux">
+          全方位守护，<br/>
+          <em>从侦测到复盘</em>
+        </h2>
+      </div>
+
+      <div class="feat-lux-grid">
+        <article class="feat-lux-card flc-hero">
+          <div class="flc-num">01</div>
+          <h3>QuietZone™ 宁静守护</h3>
+          <p>核心 ANC 引擎。一键启动，自动完成麦克风-扬声器延迟校准，持续追踪噪音频率变化并动态重校准，同步叠加 DreamAmbient™ 大自然背景音，全程无感陪伴——<em>让每一次呼吸都更深沉，让每一小时都真正属于休息。</em></p>
+          <div class="flc-tags">
+            <span>反相输出</span>
+            <span>自动校准</span>
+            <span>动态追踪</span>
+            <span>QuietZone™</span>
+          </div>
+        </article>
+
+        <article class="feat-lux-card">
+          <div class="flc-num">02</div>
+          <h3>SnoreShield™ 呼噜守护</h3>
+          <p>智能识别呼噜声事件，自动录音，生成温柔的夜间摘要：今晚比上周安静了多少、最响的时段是什么时候，不指责，只关心你睡得怎样。</p>
+          <div class="flc-tags">
+            <span>事件检测</span><span>自动录音</span><span>SnoreShield™</span>
+          </div>
+        </article>
+
+        <article class="feat-lux-card">
+          <div class="flc-num">03</div>
+          <h3>三路实时可视化</h3>
+          <p>同屏实时显示三条波形：环境噪音 / 反相输出 / 理论抵消效果。让你<em>看见</em> SleeePal 在做什么，建立真实的信任感，而不是"感觉像在起作用"。</p>
+          <div class="flc-tags">
+            <span>实时频谱</span><span>三路波形</span><span>效果估算</span>
+          </div>
+        </article>
+
+        <article class="feat-lux-card">
+          <div class="flc-num">04</div>
+          <h3>噪音取证</h3>
+          <p>分贝持续监测、突发噪音事件自动记录、时间轴与峰值统计，支持导出分享。家庭噪音、邻里纠纷、夜间异响，都有据可查。</p>
+          <div class="flc-tags">
+            <span>dB 监测</span><span>事件取证</span><span>导出分享</span>
+          </div>
+        </article>
+
+        <article class="feat-lux-card">
+          <div class="flc-num">05</div>
+          <h3>DreamAmbient™ 助眠声景</h3>
+          <p>雨声、溪流、森林、白噪音——自然声景与反相信号同步混合，进一步掩蔽残余噪音，引导大脑进入放松状态，每晚都是一场精心策划的宁静旅程。</p>
+          <div class="flc-tags">
+            <span>雨声</span><span>溪流</span><span>森林</span><span>DreamAmbient™</span>
+          </div>
+        </article>
+
+        <article class="feat-lux-card flc-soon">
+          <div class="flc-num">06</div>
+          <h3>BabyGuard™ 宝宝守护</h3>
+          <p>专为育儿妈妈设计，环境噪音监测 + 柔和宁静守护 + 夜间异常提醒，让宝宝睡眠时光不被轻易打断。</p>
+          <div class="flc-tags">
+            <span class="coming-tag">即将上线</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ VISUAL SECTION ══ -->
+  <section class="section visual-lux-section" id="visual">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="kicker-lux">三路实时可视化</div>
+        <h2 class="section-title-lux">
+          让你看见，<br/>
+          <em>宁静正在发生</em>
+        </h2>
+        <p class="section-desc-lux">
+          三条波形，一屏呈现。噪音、反相、理论抵消效果，<br/>
+          实时同步——科学可见，不靠玄学。
+        </p>
+      </div>
+
+      <!-- Big visualization panel -->
+      <div class="viz-lux-panel">
+        <div class="vlp-header">
+          <div class="vlp-status">
+            <span class="vlp-dot"></span>
+            <span>实时守护中 · 主频 62 Hz · 2h 34m</span>
+          </div>
+          <div class="vlp-tabs">
+            <button class="vlp-tab active">频谱</button>
+            <button class="vlp-tab">波形</button>
+            <button class="vlp-tab">趋势</button>
+          </div>
+        </div>
+
+        <div class="vlp-tracks">
+          <div class="vlp-track">
+            <div class="vlp-track-header">
+              <div class="vlpt-left">
+                <span class="vlpt-color" style="background:#e07b9f"></span>
+                <span class="vlpt-name">环境噪音输入</span>
+              </div>
+              <div class="vlpt-right">
+                <span>主频 62 Hz</span>
+                <span>强度 56 dB</span>
+              </div>
+            </div>
+            <div class="vlp-wave-area">
+              <svg viewBox="0 0 800 72" preserveAspectRatio="none" class="vlp-wave-svg">
+                <defs>
+                  <linearGradient id="ng" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#e07b9f" stop-opacity="0.7"/>
+                    <stop offset="100%" stop-color="#e07b9f" stop-opacity="0.05"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0,36 C25,14 40,54 60,28 C80,4 100,56 120,30 C140,6 160,52 180,26 C200,2 220,58 240,30 C260,4 280,54 300,28 C320,4 340,56 360,30 C380,6 400,52 420,26 C440,2 460,58 480,30 C500,4 520,54 540,28 C560,4 580,56 600,30 C620,6 640,52 660,26 C680,2 700,58 720,30 C740,6 760,52 780,28 L800,36 L800,72 L0,72 Z"
+                  fill="url(#ng)" class="va-noise"/>
+                <path d="M0,36 C25,14 40,54 60,28 C80,4 100,56 120,30 C140,6 160,52 180,26 C200,2 220,58 240,30 C260,4 280,54 300,28 C320,4 340,56 360,30 C380,6 400,52 420,26 C440,2 460,58 480,30 C500,4 520,54 540,28 C560,4 580,56 600,30 C620,6 640,52 660,26 C680,2 700,58 720,30 C740,6 760,52 780,28 L800,36"
+                  fill="none" stroke="#e07b9f" stroke-width="2" class="va-noise"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="vlp-track">
+            <div class="vlp-track-header">
+              <div class="vlpt-left">
+                <span class="vlpt-color" style="background:#9e8fca"></span>
+                <span class="vlpt-name">反相输出信号</span>
+              </div>
+              <div class="vlpt-right">
+                <span>延迟 12ms 校正</span>
+                <span>增益 −2 dB</span>
+              </div>
+            </div>
+            <div class="vlp-wave-area">
+              <svg viewBox="0 0 800 72" preserveAspectRatio="none" class="vlp-wave-svg">
+                <defs>
+                  <linearGradient id="ag" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#9e8fca" stop-opacity="0.7"/>
+                    <stop offset="100%" stop-color="#9e8fca" stop-opacity="0.05"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0,36 C25,58 40,18 60,44 C80,68 100,16 120,42 C140,66 160,20 180,46 C200,70 220,14 240,42 C260,68 280,18 300,44 C320,68 340,16 360,42 C380,66 400,20 420,46 C440,70 460,14 480,42 C500,68 520,18 540,44 C560,68 580,16 600,42 C620,66 640,20 660,46 C680,70 700,14 720,42 C740,66 760,20 780,44 L800,36 L800,72 L0,72 Z"
+                  fill="url(#ag)" class="va-anti"/>
+                <path d="M0,36 C25,58 40,18 60,44 C80,68 100,16 120,42 C140,66 160,20 180,46 C200,70 220,14 240,42 C260,68 280,18 300,44 C320,68 340,16 360,42 C380,66 400,20 420,46 C440,70 460,14 480,42 C500,68 520,18 540,44 C560,68 580,16 600,42 C620,66 640,20 660,46 C680,70 700,14 720,42 C740,66 760,20 780,44 L800,36"
+                  fill="none" stroke="#9e8fca" stroke-width="2" class="va-anti"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="vlp-track vlp-result-track">
+            <div class="vlp-track-header">
+              <div class="vlpt-left">
+                <span class="vlpt-color" style="background:#c9a96e"></span>
+                <span class="vlpt-name">理论抵消效果 <small>（估算）</small></span>
+              </div>
+              <div class="vlpt-right result-gold-text">
+                <span>主峰降低 ~18 dB</span>
+                <span>改善约 68%</span>
+              </div>
+            </div>
+            <div class="vlp-wave-area vlp-wave-result">
+              <svg viewBox="0 0 800 72" preserveAspectRatio="none" class="vlp-wave-svg">
+                <defs>
+                  <linearGradient id="rg" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#c9a96e" stop-opacity="0.4"/>
+                    <stop offset="100%" stop-color="#c9a96e" stop-opacity="0.02"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0,36 C200,35.5 400,36.5 600,36 C700,35.8 750,36.2 800,36 L800,72 L0,72 Z"
+                  fill="url(#rg)"/>
+                <path d="M0,36 C200,35.5 400,36.5 600,36 C700,35.8 750,36.2 800,36"
+                  fill="none" stroke="#c9a96e" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="vlp-footer">
+          <span class="vlp-disclaimer">⚠ 理论效果为信号模拟估算，实际效果受空间、设备类型及摆位距离影响</span>
+          <div class="vlp-badge">
+            <span>🛡</span>
+            <span>守护中 · 宁静</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ TESTIMONIALS ══ -->
+  <section class="section testimony-section">
+    <div class="container">
+      <div class="section-header centered">
+        <div class="kicker-lux">真实反馈</div>
+        <h2 class="section-title-lux"><em>她们睡得更好了</em></h2>
+      </div>
+      <div class="testimony-grid">
+        <blockquote class="testimony-card">
+          <div class="tc-quote">"</div>
+          <p>以前每天晚上都要硬塞耳塞，侧睡压着很不舒服。现在就把手机放枕边，打开 SleeePal，真的能感觉到那个频率的声音被"平掉"了。我终于愿意直接躺下了。</p>
+          <footer>— 王女士，32岁，北京</footer>
+        </blockquote>
+        <blockquote class="testimony-card tc-featured">
+          <div class="tc-quote">"</div>
+          <p>宝宝夜里特别容易被外面声音吵醒，用了之后明显少了好几次。我自己也跟着多睡了将近一个小时。早上起来精神好太多了——那种感觉，是任何护肤品都给不了的。</p>
+          <footer>— 陈妈妈，29岁，上海</footer>
+        </blockquote>
+        <blockquote class="testimony-card">
+          <div class="tc-quote">"</div>
+          <p>午睡 20 分钟对我太重要了，以前公司太吵根本睡不着。打开 SleeePal 叠一个雨声，那种安静感真的不一样——下午整个人都清醒，比喝咖啡管用。</p>
+          <footer>— 李同学，24岁，深圳</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ DOWNLOAD ══ -->
+  <section class="download-lux-section" id="download">
+    <div class="dl-lux-bg">
+      <div class="dlb-circle dlb-1"></div>
+      <div class="dlb-circle dlb-2"></div>
+      <div class="dlb-circle dlb-3"></div>
+    </div>
+    <div class="dl-lux-content">
+      <div class="dl-lux-eyebrow" data-i18n="download.eyebrow">开始你的宁静之夜</div>
+      <h2 class="dl-lux-title">
+        <span data-i18n-html="download.title">睡眠宝，<br/>今晚就陪着你</span>
+      </h2>
+      <p class="dl-lux-sub" data-i18n="download.sub">免费下载 · Mac 桌面版 · 无需注册</p>
+      <div class="dl-lux-cta">
+        <a class="btn-lux-download" href="../app/dist/SleeePal-0.3.3.dmg" data-i18n="download.button">
+          <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+            <path d="M10 2a1 1 0 011 1v8.586l2.707-2.707a1 1 0 111.414 1.414l-4.414 4.414a1 1 0 01-1.414 0L4.879 10.293a1 1 0 111.414-1.414L9 11.586V3a1 1 0 011-1z"/>
+            <path d="M3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"/>
+          </svg>
+          下载 Mac 版（免费）
+        </a>
+        <div class="dl-sysreq" data-i18n="download.sysreq">macOS 12+ · Apple Silicon &amp; Intel · 约 85 MB</div>
+      </div>
+      <div class="dl-lux-coming">
+        <span data-i18n="download.coming1">iOS App</span>
+        <span data-i18n="download.coming2">Android</span>
+        <span data-i18n="download.coming3">Windows</span>
+        <small data-i18n="download.coming4">即将推出</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer-lux">
+    <div class="container">
+      <div class="fl-grid">
+        <div class="fl-brand">
+          <div class="fl-logo">
+            <img class="footer-logo" src="./assets/logo-light.svg" alt="SleeePal" />
+          </div>
+          <p data-i18n="footer.tagline">睡眠，才是最好的奢侈品。</p>
+          <div class="fl-domain">sleeepal.com</div>
+        </div>
+        <div class="fl-col">
+          <div class="fl-col-title" data-i18n="footer.product">产品</div>
+          <a href="#science" data-i18n="footer.product1">工作原理</a>
+          <a href="#features" data-i18n="footer.product2">核心功能</a>
+          <a href="#visual" data-i18n="footer.product3">可视化</a>
+          <a href="#download" data-i18n="footer.product4">免费下载</a>
+        </div>
+        <div class="fl-col">
+          <div class="fl-col-title" data-i18n="footer.people">适用人群</div>
+          <a href="#who" data-i18n="footer.people1">已婚女性</a>
+          <a href="#who" data-i18n="footer.people2">育儿妈妈</a>
+          <a href="#who" data-i18n="footer.people3">午睡守护</a>
+        </div>
+        <div class="fl-col">
+          <div class="fl-col-title" data-i18n="footer.about">关于</div>
+          <a href="#" data-i18n="footer.about1">隐私政策</a>
+          <a href="#" data-i18n="footer.about2">使用条款</a>
+          <a href="#" data-i18n="footer.about3">联系我们</a>
+        </div>
+      </div>
+      <div class="fl-bottom">
+        <div class="fl-copy" data-i18n="footer.copy">© 2026 SleeePal 睡眠宝 · sleeepal.com</div>
+        <div class="fl-disclaimer" data-i18n="footer.disclaimer">SleeePal 为非药物助眠辅助工具，不构成医疗建议或诊断。理论效果因实际空间、设备及摆位不同而存在差异。</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
