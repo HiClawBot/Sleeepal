@@ -1,28 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f7f1e7"/>
-      <stop offset="52%" stop-color="#efe4d3"/>
-      <stop offset="100%" stop-color="#e7d8c3"/>
+      <stop offset="0%" stop-color="#120d17"/>
+      <stop offset="48%" stop-color="#191320"/>
+      <stop offset="100%" stop-color="#241a2d"/>
     </linearGradient>
-    <radialGradient id="halo" cx="48%" cy="36%" r="58%">
-      <stop offset="0%" stop-color="#fff9ef" stop-opacity="0.95"/>
-      <stop offset="100%" stop-color="#fff9ef" stop-opacity="0"/>
+    <radialGradient id="halo" cx="50%" cy="40%" r="52%">
+      <stop offset="0%" stop-color="#fffaf1" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#fffaf1" stop-opacity="0"/>
     </radialGradient>
+    <linearGradient id="gold" x1="18%" y1="18%" x2="80%" y2="84%">
+      <stop offset="0%" stop-color="#f4d548"/>
+      <stop offset="52%" stop-color="#ffd84e"/>
+      <stop offset="100%" stop-color="#d8a51c"/>
+    </linearGradient>
   </defs>
 
   <rect width="1024" height="1024" rx="230" fill="url(#bg)"/>
-  <rect width="1024" height="1024" rx="230" fill="url(#halo)"/>
-
-  <text x="500" y="665"
-        text-anchor="middle"
-        font-family="'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif"
-        font-size="510">🌙</text>
-
-  <text x="560" y="486"
-        text-anchor="middle"
-        font-family="'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif"
-        font-size="290"
-        opacity="0.94"
-        transform="rotate(-10 560 486)">💤</text>
+  <ellipse cx="512" cy="512" rx="330" ry="330" fill="#f8efe1" opacity="0.96"/>
+  <ellipse cx="512" cy="512" rx="270" ry="270" fill="url(#halo)" opacity="0.85"/>
+  <path d="M666 178
+           C773 236 844 349 844 479
+           C844 680 680 844 479 844
+           C371 844 272 797 203 722
+           C254 743 312 754 373 754
+           C583 754 754 584 754 373
+           C754 300 723 232 666 178 Z"
+        fill="url(#gold)"/>
+  <g fill="#1554c1" font-family="'Georgia',serif" font-style="italic" font-weight="700">
+    <text x="398" y="618" font-size="170" transform="rotate(-11 398 618)">z</text>
+    <text x="506" y="505" font-size="210" transform="rotate(-10 506 505)">z</text>
+    <text x="614" y="382" font-size="250" transform="rotate(-9 614 382)">z</text>
+  </g>
 </svg>
