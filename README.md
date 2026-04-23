@@ -1,55 +1,40 @@
 # Sleeepal
 
-Sleeepal is the public website repository for the SleeePal project, a local-first sleep assistance product exploring near-field active noise reduction around the pillow.
+Sleeepal is the public website and brand repository for the SleeePal project.
 
-Sleeepal 是 SleeePal 项目的官网仓库。SleeePal 是一个本地优先的睡眠辅助产品，核心方向是在枕边构建近场宁静区，而不是试图消除整间房间的所有声音。
+Sleeepal 是 SleeePal 项目的官网与公开品牌仓库。
 
-## Overview
+## Public Scope
 
-This repository contains the public-facing marketing site only.
+This repository currently publishes:
 
-这个仓库当前只包含官网静态站内容，不包含桌面端、iOS、macOS 应用源码，也不包含构建产物。
+- the public marketing website
+- bilingual website copy in Chinese and English
+- the refreshed moon-plus-zzz brand system
+- release notes for the public-facing site
 
-## What This Repo Contains
+当前这个仓库只公开以下内容：
 
-- `index.html`: landing page
-- `styles.css`: site styles
-- `site.js`: site interactions and bilingual behavior
-- `assets/`: logos, icon assets, and brand visuals
+- 官网静态站
+- 中英文公开文案
+- 金色月牙 + 深蓝色 zzz 的新版品牌系统
+- 官网发布说明文档
 
-## Product Direction
+## Not Public Yet
 
-SleeePal is being shaped around one narrow and concrete promise:
+The following are still under active validation and are not being publicly released from this repository yet:
 
-- create a quiet zone around the user's head, not the whole room
-- keep processing local on device
-- avoid user audio uploads
-- make the system visible and explainable instead of a black box
-- build a calm, premium, trustworthy product surface
+- Mac app binaries
+- iPhone app binaries
+- internal development snapshots
+- unfinished product experiments
 
-SleeePal 当前不是一个泛泛的“助眠 App”概念，而是围绕一个非常具体的目标推进：
+以下内容仍在验证中，暂不通过这个仓库公开发布：
 
-- 在头部附近建立宁静区，而不是给整个房间做声学改造
-- 尽量保持本地处理
-- 不上传用户音频
-- 不使用不可解释的黑箱式叙事
-- 让产品体验保持克制、可信和高端感
-
-## Repository Scope
-
-This repo is intended for:
-
-- public website publishing
-- brand presentation
-- product messaging
-- lightweight static hosting
-
-This repo is not intended for:
-
-- the Python desktop application source
-- iOS or macOS app development
-- packaging artifacts
-- internal experiment history
+- Mac 应用产物
+- iPhone 应用产物
+- 内部开发快照
+- 尚未完成验证的产品实验
 
 ## Local Preview
 
@@ -57,33 +42,13 @@ This repo is not intended for:
 python3 -m http.server 8000
 ```
 
-Then open [http://localhost:8000](http://localhost:8000).
+Then open `http://localhost:8000`.
 
-## Deployment
+## Brand Direction
 
-This repository is structured as a simple static site and can be deployed with:
+SleeePal is built around a narrow and concrete promise: create a calm, credible quiet zone around the pillow rather than claiming full-room silence.
 
-- GitHub Pages
-- Netlify
-- Vercel static hosting
-- any basic web server
-
-## Broader Project
-
-The wider SleeePal project also includes:
-
-- a Python desktop application
-- an iOS SwiftUI companion app
-- a macOS SwiftUI shell
-- protocol and product documentation
-
-This repository is only the public website surface for that broader effort.
-
-## Privacy Position
-
-SleeePal is being developed as a local-first product direction. The project does not aim to collect user identity data or upload private bedside audio as part of the website itself.
-
-SleeePal 的产品方向强调本地优先。至少在当前网站与公开介绍层面，它并不是一个依赖云端采集用户音频或上传卧室环境数据的产品叙事。
+SleeePal 围绕一个非常具体的目标推进：先在枕边构建可信、可解释的宁静区，而不是夸大成“整间房都静下来”。
 
 ## License
 
