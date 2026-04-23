@@ -23,16 +23,16 @@
              C71 31 68 24 63 18 Z"
           fill="url(#goldGrad)"/>
     <g fill="#1554c1" font-family="'Georgia',serif" font-style="italic" font-weight="700">
-      <text x="38" y="64" font-size="22" transform="rotate(-11 38 64)">z</text>
-      <text x="49" y="52" font-size="28" transform="rotate(-10 49 52)">z</text>
-      <text x="61" y="39" font-size="34" transform="rotate(-9 61 39)">z</text>
+      <text x="38" y="68" font-size="22" transform="rotate(-11 38 68)">z</text>
+      <text x="49" y="56" font-size="28" transform="rotate(-10 49 56)">z</text>
+      <text x="61" y="43" font-size="34" transform="rotate(-9 61 43)">z</text>
     </g>
   </g>
 
-  <text x="136" y="73"
+  <text x="136" y="86"
         font-family="'Cormorant Garamond','Georgia',serif"
         font-size="64"
         font-weight="500"
         letter-spacing="-0.6"
-        fill="#17121d">SleeePal.com</text>
+        fill="#17121d">SleeePal<tspan font-size="42">.com</tspan></text>
 </svg>
