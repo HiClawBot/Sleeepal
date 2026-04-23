@@ -1,38 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 140" width="540" height="140">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 128" width="720" height="128">
   <defs>
     <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#b8924f"/>
-      <stop offset="48%" stop-color="#e8d5a3"/>
-      <stop offset="100%" stop-color="#c9a96e"/>
+      <stop offset="0%" stop-color="#f0c934"/>
+      <stop offset="50%" stop-color="#ffd95a"/>
+      <stop offset="100%" stop-color="#d9a61f"/>
     </linearGradient>
+    <filter id="softGlow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
   </defs>
 
-  <g transform="translate(18, 18)">
-    <rect x="0" y="0" width="92" height="92" rx="28" fill="#1c1522"/>
-    <text x="41" y="69"
-          text-anchor="middle"
-          font-family="'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif"
-          font-size="44">🌙</text>
-    <text x="54" y="46"
-          text-anchor="middle"
-          font-family="'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif"
-          font-size="28"
-          opacity="0.94"
-          transform="rotate(-10 54 46)">💤</text>
+  <g transform="translate(16, 16)">
+    <rect x="0" y="0" width="96" height="96" rx="28" fill="#18131d"/>
+    <ellipse cx="48" cy="48" rx="34" ry="34" fill="#f8efe0" opacity="0.96"/>
+    <ellipse cx="48" cy="48" rx="29" ry="29" fill="#ffffff" opacity="0.18" filter="url(#softGlow2)"/>
+    <path d="M63 18
+             C74 24 82 37 82 51
+             C82 71 66 87 46 87
+             C34 87 24 82 17 74
+             C22 76 28 77 34 77
+             C55 77 71 60 71 39
+             C71 31 68 24 63 18 Z"
+          fill="url(#goldGrad2)"/>
+    <g fill="#1554c1" font-family="'Georgia',serif" font-style="italic" font-weight="700">
+      <text x="38" y="64" font-size="22" transform="rotate(-11 38 64)">z</text>
+      <text x="49" y="52" font-size="28" transform="rotate(-10 49 52)">z</text>
+      <text x="61" y="39" font-size="34" transform="rotate(-9 61 39)">z</text>
+    </g>
   </g>
 
-  <text x="130" y="67"
+  <text x="136" y="73"
         font-family="'Cormorant Garamond','Georgia',serif"
-        font-size="60"
+        font-size="64"
         font-weight="500"
         letter-spacing="-0.6"
-        fill="#fbf5ee">SleeePal</text>
-
-  <line x1="132" y1="81" x2="376" y2="81" stroke="url(#goldGrad2)" stroke-width="1.2" opacity="0.8"/>
-
-  <text x="132" y="104"
-        font-family="'Inter','Helvetica Neue',sans-serif"
-        font-size="11"
-        letter-spacing="2.9"
-        fill="#d8cab7">SLEEP KEPT SACRED · 睡眠宝</text>
+        fill="#fbf5ee">SleeePal.com</text>
 </svg>
