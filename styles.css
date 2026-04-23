@@ -990,6 +990,10 @@ ul { list-style: none; }
   border-color: rgba(201,169,110,0.3);
   box-shadow: var(--sh-gold);
 }
+.wnf-card-trial {
+  background: linear-gradient(135deg, #f7f4ff, #f1ecff);
+  border-color: rgba(158,143,202,0.26);
+}
 .wnfc-icon { font-size: 1.6rem; margin-bottom: 4px; }
 .wnfc-title {
   font-size: 0.88rem;
@@ -1012,6 +1016,7 @@ ul { list-style: none; }
   border-radius: var(--r-full);
 }
 .wnfc-badge.lite { background: #dcfce7; color: #166534; }
+.wnfc-badge.trial { background: rgba(158,143,202,0.18); color: var(--lav-500); }
 .wnfc-badge.pro  { background: linear-gradient(135deg, var(--gold-200), var(--gold-300)); color: var(--gold-700); }
 .wnfc-badge.max  { background: var(--ink-800); color: var(--gold-300); }
 
@@ -1048,6 +1053,7 @@ ul { list-style: none; }
 .wlc-rose    { background: linear-gradient(160deg, var(--blush-100), #fff9fb); }
 .wlc-lavender{ background: linear-gradient(160deg, var(--lav-100), #faf8ff); }
 .wlc-mint    { background: linear-gradient(160deg, #f0fdf9, #f6fffb); }
+.wlc-gold    { background: linear-gradient(160deg, var(--gold-100), #fffaf0); }
 
 .wlc-number {
   font-size: 0.6rem;
@@ -1063,6 +1069,7 @@ ul { list-style: none; }
 .wlc-rose     .wlc-icon { color: var(--blush-400); }
 .wlc-lavender .wlc-icon { color: var(--lav-400); }
 .wlc-mint     .wlc-icon { color: var(--mint-400); }
+.wlc-gold     .wlc-icon { color: var(--gold-500); }
 
 .who-lux-card h3 {
   font-family: var(--font-display);
@@ -1558,6 +1565,77 @@ ul { list-style: none; }
   font-size: 0.72rem;
   color: rgba(255,255,255,0.2);
   letter-spacing: 0.05em;
+}
+.dl-release-card {
+  margin: 0 auto var(--s5);
+  width: min(640px, 100%);
+  text-align: left;
+  padding: var(--s3);
+  border-radius: var(--r-lg);
+  border: 1px solid rgba(201,169,110,0.18);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.03)),
+    rgba(20,16,31,0.78);
+  box-shadow: 0 18px 60px rgba(0,0,0,0.24);
+}
+.dl-release-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s2);
+  margin-bottom: 10px;
+}
+.dl-release-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: var(--r-full);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-300);
+  background: rgba(201,169,110,0.12);
+  border: 1px solid rgba(201,169,110,0.16);
+}
+.dl-release-version {
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  color: var(--gold-200);
+}
+.dl-release-time {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.52);
+  letter-spacing: 0.04em;
+  margin-bottom: 10px;
+}
+.dl-release-note {
+  font-size: 0.92rem;
+  color: rgba(255,255,255,0.86);
+  line-height: 1.7;
+  margin-bottom: var(--s2);
+}
+.dl-release-progress {
+  display: grid;
+  gap: 10px;
+}
+.dl-release-progress li {
+  position: relative;
+  padding-left: 18px;
+  color: rgba(255,255,255,0.72);
+  font-size: 0.82rem;
+  line-height: 1.7;
+}
+.dl-release-progress li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold-500), var(--blush-400));
+  box-shadow: 0 0 14px rgba(201,169,110,0.28);
 }
 .dl-lux-coming {
   display: flex;
