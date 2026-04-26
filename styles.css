@@ -2356,3 +2356,139 @@ body {
     border-bottom: 0;
   }
 }
+
+/* ── Readability and fit pass for science + FAQ ── */
+.hero-pretitle {
+  line-height: 1.6;
+  padding-right: 1.2rem;
+}
+
+.hero-lux-title,
+.section-title-lux,
+.wnf-text h3 {
+  overflow: visible;
+}
+
+.anc-arrow-mid {
+  min-width: 150px;
+  font-size: 1.25rem;
+  color: var(--vi-lavender);
+}
+
+.anc-arrow-mid span {
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: none;
+  color: var(--vi-ice);
+  line-height: 1.45;
+}
+
+.ancc-icon {
+  overflow: visible;
+}
+
+.anc-card p {
+  font-size: 1rem;
+  color: var(--vi-mist);
+}
+
+.wnf-list li {
+  font-size: 1rem;
+  color: var(--vi-ice);
+  line-height: 1.75;
+}
+
+.wnf-note {
+  font-size: 0.92rem;
+  color: var(--vi-mist);
+  line-height: 1.75;
+}
+
+.wnf-card {
+  min-height: 176px;
+}
+
+.wnfc-title {
+  font-size: 1.12rem;
+  color: var(--vi-ice);
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+.wnfc-zone {
+  font-size: 0.98rem;
+  color: var(--vi-mist);
+  margin-bottom: 14px;
+  line-height: 1.65;
+}
+
+.wnfc-badge {
+  font-size: 0.72rem;
+  padding: 6px 12px;
+}
+
+.faq-section {
+  margin-top: var(--s7);
+}
+
+.faq-header {
+  margin-bottom: var(--s5);
+}
+
+.faq-title {
+  font-size: clamp(1.9rem, 3.4vw, 3rem);
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s3);
+}
+
+.faq-card {
+  background: linear-gradient(145deg, rgba(17, 24, 46, 0.82), rgba(10, 16, 32, 0.58));
+  border: 1px solid var(--vi-line);
+  border-radius: var(--r-lg);
+  padding: var(--s4);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28), inset 0 1px rgba(255, 255, 255, 0.06);
+}
+
+.faq-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.18rem;
+  line-height: 1.4;
+  color: var(--vi-ice);
+  margin-bottom: 12px;
+}
+
+.faq-card p {
+  font-size: 0.98rem;
+  line-height: 1.8;
+  color: rgba(203, 213, 225, 0.82);
+}
+
+.faq-card-wide {
+  grid-column: span 2;
+}
+
+@media (max-width: 1024px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-card-wide {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 860px) {
+  .hero-pretitle {
+    padding-right: 0;
+    font-size: 0.64rem;
+    letter-spacing: 0.14em;
+  }
+
+  .anc-arrow-mid {
+    min-width: auto;
+  }
+}
